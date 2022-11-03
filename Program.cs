@@ -9,10 +9,6 @@ namespace DartGame_Redux_V2
         {
             Game mygame = new Game();
             mygame.PlayGame();
-            
-
         }
-
-        
     }
 }
