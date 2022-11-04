@@ -21,9 +21,9 @@ namespace DartGame_Redux_V2
         List<Turns> ListOfTurns = new List<Turns>();
         
         int TotalOfAllRounds;
-#pragma warning disable IDE1006 // Naming Styles
-        public int totalofrounds { get { return TotalOfAllRounds; } }
-#pragma warning restore IDE1006 // Naming Styles
+
+        public int Totalofrounds { get { return TotalOfAllRounds; } }
+
         
         public void CalculatePoints()
         {
@@ -55,15 +55,14 @@ namespace DartGame_Redux_V2
                     int Add_Turn_Toss1;
                     int Add_Turn_Toss2;
                     int Add_Turn_Toss3;
-#pragma warning disable CS8604 // Possible null reference argument.
+
                     Add_Turn_Toss1 = int.Parse(Console.ReadLine());
-#pragma warning restore CS8604 // Possible null reference argument.
-#pragma warning disable CS8604 // Possible null reference argument.
+                    
+
                     Add_Turn_Toss2 = int.Parse(Console.ReadLine());
-#pragma warning restore CS8604 // Possible null reference argument.
-#pragma warning disable CS8604 // Possible null reference argument.
+
                     Add_Turn_Toss3 = int.Parse(Console.ReadLine());
-#pragma warning restore CS8604 // Possible null reference argument.
+
                     Console.WriteLine($"You threw:{Add_Turn_Toss1} {Add_Turn_Toss2} {Add_Turn_Toss3}");
                     ListOfTurns.Add(new Turns(Add_Turn_Toss1, Add_Turn_Toss2, Add_Turn_Toss3));
                 }

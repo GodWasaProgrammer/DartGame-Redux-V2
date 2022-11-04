@@ -14,6 +14,7 @@ namespace DartGame_Redux_V2
         List<Player> Gamers = new List<Player>();
         string ?name;
         int GameLoop = 0;
+        int NumberToWin = 301;
         
         public void PlayGame()
         {
@@ -49,7 +50,7 @@ namespace DartGame_Redux_V2
                         player.Add_Turn();
                         
 
-                    if (player.totalofrounds > 301)
+                    if (player.Totalofrounds > NumberToWin)
                     {
                         Console.WriteLine("We Have a Winner!");
                         Console.WriteLine("The name of the Winner is:{0}", player.name);
@@ -57,7 +58,7 @@ namespace DartGame_Redux_V2
                         player.Print_Turns();
                         Environment.Exit(0);
                     }
-                    if (player.totalofrounds == 301)
+                    if (player.Totalofrounds == NumberToWin)
                     {
                         Console.WriteLine("We Have a Winner!");
                         Console.WriteLine("The name of the Winner is:{0}", player.name);
