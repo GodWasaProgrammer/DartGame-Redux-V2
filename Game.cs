@@ -53,7 +53,7 @@ namespace DartGame_Redux_V2
                     if (player.Totalofrounds > NumberToWin)
                     {
                         Console.WriteLine("We Have a Winner!");
-                        Console.WriteLine("The name of the Winner is:{0}", player.name);
+                        Console.WriteLine($"The name of the Winner is:{player.name}");
                         Console.WriteLine("----------- Printing the Rounds of the Winner--------------");
                         player.Print_Turns();
                         Environment.Exit(0);
@@ -61,7 +61,7 @@ namespace DartGame_Redux_V2
                     if (player.Totalofrounds == NumberToWin)
                     {
                         Console.WriteLine("We Have a Winner!");
-                        Console.WriteLine("The name of the Winner is:{0}", player.name);
+                        Console.WriteLine($"The name of the Winner is:{player.name}");
                         Console.WriteLine("----------- Printing the Rounds of the Winner--------------");
                         player.Print_Turns();
                          Environment.Exit(0);

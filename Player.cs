@@ -71,10 +71,10 @@ namespace DartGame_Redux_V2
         public void Print_Turns()
         {
                     int NumberOfIteratedRound = 1;
-                    Console.WriteLine("This round Belongs to:{0}", Name);
+                    Console.WriteLine($"This round Belongs to:{Name}");
             foreach (var turn in ListOfTurns)
             {
-                    Console.WriteLine("Round Number is:{0}", NumberOfIteratedRound);
+                    Console.WriteLine($"Round Number is:{NumberOfIteratedRound}");
                     NumberOfIteratedRound++;
                     Console.WriteLine(turn);
             }
