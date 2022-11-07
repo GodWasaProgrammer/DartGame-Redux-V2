@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -12,7 +11,7 @@ namespace DartGame_Redux_V2
     public class Game
     {
         List<Player> Gamers = new List<Player>();
-        string ?name;
+        string name;
         int GameLoop = 0;
         int NumberToWin = 301;
         

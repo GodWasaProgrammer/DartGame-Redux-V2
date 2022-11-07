@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DartGame_Redux_V2
+﻿namespace DartGame_Redux_V2
 {
     public class Turns
     {
@@ -28,9 +21,9 @@ namespace DartGame_Redux_V2
             Console.WriteLine("You Threw:{0}", Toss3);
             Console.WriteLine("Your RoundTotal is:{0}", RoundTotal);
             Console.WriteLine("-------------------------------");
-#pragma warning disable CS8603 // Possible null reference return.
+
             return null;
-#pragma warning restore CS8603 // Possible null reference return.
+
         }
         public int Get_Score()
         {
